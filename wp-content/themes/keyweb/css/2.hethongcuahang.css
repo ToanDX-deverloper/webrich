@@ -1,0 +1,22 @@
+.page-title h2{ 
+	color: #333333;
+	padding: 0px 0px 15px 0px;
+	margin: 30px 0px 15px 0px;
+	border-bottom: 1px solid #ededed;
+}
+.content-page {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 30px;
+}
+.shop-system a { margin-top: 6px; color: #333; display: block; transform: all ..3s ease;}
+.shop-system a:hover{color:#86bc42;}
+.shop-system-img{ overflow: hidden;  }
+.shop-system-img img{ transition:all 0.6s ease; }
+.shop-system-img:hover img{ transform: scale(1.05); }
+
+@media only screen and (max-width: 480px){
+	.content-page {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,198 @@
+.form-row {
+	display: flex;
+	flex-direction: column;
+}
+.woocommerce-checkout #billing_email_field {
+	width: 63%;
+	display: inline-block;
+}
+.woocommerce-checkout #billing_phone_field {
+	float: right;
+	width: 35%;
+}
+.woocommerce-billing-fields__field-wrapper input {
+	height: 50px;
+	padding: 10px;
+}
+.checkout-2 {
+	width: 50%;
+}
+.checkout-2 .col-1{
+	display: none;
+}
+.full-checkout {
+	display: flex;
+}
+.checkout-tu-tao,.checkout-2 {
+	width: 50%;
+} 
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+	float: left;
+	width: calc(100% - 50px) !important;
+}
+.woocommerce-checkout .input-text {
+	box-shadow: 0 0 0 1px #d9d9d9;
+	transition: all 0.2s ease-out;
+	background-color: white;
+	color: #333333;
+	border-radius: 4px;
+	/* display: block; */
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.94em 2.8em 0.94em 0.8em;
+	word-break: normal;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+.gio-hang {
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	line-height: 52px;
+	color: #1a80b5;
+	float: left;
+}
+.gio-hang::before {
+	content: '\f104';
+	font-family: 'fontawesome';
+	margin-right: 4px;
+	transform: translateX(0px);
+}
+.gio-hang:hover {
+	transition: 0.2s ease-in-out;
+	transform: translateX(-5px);
+}
+.phuong-thuc {
+	width: 280px;
+	height: 50px;
+	background: #1a80b5;
+	text-align: center;
+	line-height: 52px;
+	color: #fff;
+	border-radius: 4px;
+	font-weight: 400;
+	font-size: 14px;
+	transition: 0.2s ease-in-out;
+	float: right;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.woocommerce-checkout .product-quantity {
+	position: absolute;
+	left: 47px;
+	top: 2px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: rgba(153,153,153,0.9);
+	text-align: center;
+	color: #fff;
+	line-height: 24px;
+}
+.order_review_toggle_mobile{
+	display: none;
+}
+.woocommerce-checkout .cart_item .product-name {
+	position: relative;
+}
+.submit_input_coupon input {
+	height: 50px;
+	padding: 10px;
+	font-size: inherit;
+	box-shadow: 0 0 0 2px #e2e2e2;
+	transition: all 0.2s ease-out;
+	background-color: white;
+	color: rgba(0,0,0,0.5);
+	border-radius: 4px;
+	display: block;
+	box-sizing: border-box;
+	width: 70%;
+	padding: 0.94em 2.8em 0.94em 0.8em;
+	word-break: normal;
+	border: none;
+}
+.submit_input_coupon button {
+	width: 30%;
+	background-color: #dfdcde;
+	text-decoration: none;
+	background-image: none;
+	color: #000;
+	border: none;
+	margin-left: 10px;
+	border-radius: 4px;
+}
+.submit_input_coupon {
+	display: flex;
+	justify-content: space-around;
+	margin: auto 20px;
+}
+#order_review #payment {
+	display: none !important;
+}
+.woocommerce-checkout-step2 {
+	display: flex;
+	width: 100%;
+}
+.woocommerce-checkout-step2 .col-1 {
+	display: none;
+}
+.dat_hang_full {
+	width: 160px;
+	height: 50px;
+}
+#customer_details {
+	flex: 5;
+	margin-right: 20px;
+}
+#order_review{
+	flex:5;
+}
+.woocommerce-checkout .woocommerce-error,.place-order{
+	display: none;
+}
+#payment ul li .checkmark::after {
+	top: 7px;
+	left: 7px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: white;
+}
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+#payment ul li input:checked ~ .checkmark {
+	background: #338dbc;
+	border: none;
+}
+.checkmark {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background: #fff;
+	border-radius: 50%;
+	border: 1px solid #cccccc;
+	transition: all 0.1s ease-in-out;
+}
+#payment ul li input {
+	position: absolute;
+	opacity: 0;
+	top: 8px;
+	left: 0;
+}
+.custom-checkbox{
+	position: relative;
+}
+#payment ul li input:checked ~ .checkmark::after {
+	display: block;
+	/* transition: all 0.5s ease-in-out 0.5s; */
+}
+.custom-checkbox .tra-tien {
+	margin-left: 30px;
+}

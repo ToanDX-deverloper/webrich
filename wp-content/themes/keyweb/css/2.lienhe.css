@@ -1,0 +1,77 @@
+#primary {
+	/*padding-top: 50px;*/
+}
+.lien-he-contact{
+	justify-content: space-between;
+}
+.contact {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/*border: 1px solid;*/
+	align-items: center;
+	justify-content: center;
+	padding: 50px 30px;
+	margin: 50px 0px 100px;
+	background: #fafafa;
+}
+.contact-address,.contact-phone{ margin-right: 	20px; }
+.contact-icon i{font-size: 40px; color: #86bc42; }
+.contact-icon {
+	text-align: center;
+}
+.contact-title h4{
+	color: #333333;
+	padding: 0px;
+	margin: 30px 0px 20px; font-size: 18px; text-transform: uppercase;
+}
+.contact-content { margin-bottom: 15px; height: 50px; }
+.contact:hover{
+	background: #ffffff;
+	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
+}
+.contact-content a{ color: #333; }
+.contact-content:hover a{ color: #86bc42; }
+
+/*Form contact*/
+.lhform-contact-content form {
+	width: 100%;
+}
+.lh-input-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.lh-input{ flex:1; }
+.lh-input input,.lh-content textarea{ width: 100%; height: 50px; outline: none; border:none; background: #f4f1f1; padding:10px;}
+.lh-input input::placeholder,.lh-content textarea::placeholder{ font-family: "Cuprum-Regular",san-serif;  font-size: 16px;}
+.lhform-name,.lhform-email{ margin-right: 30px; margin-bottom: 10px;}
+.lh-content textarea{width: 100%; height: 300px;}
+.lh-send{ text-align: center; margin: 40px 0px;  }
+.form-contact-title h4{
+	color: #333333;
+	padding: 0px 0px 15px 0px;
+	margin: 30px 0px 15px 0px;
+	border-bottom: 1px solid #ededed;
+	font-size: 18px;
+}
+.lh-map iframe{  width: 100%; height: 300px; }
+
+
+@media only screen and (max-width: 480px){
+	.lien-he-contact{
+		flex-direction: column;
+	}
+	.contact{
+		margin:20px 0px;
+	}
+	.lh-input-wrapper {
+		flex-direction: column;
+	}
+	.lh-input{
+		margin-right: 0px;
+	}
+	.lh-content{
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,21 @@
+.onsale1 {
+	width: 40px;
+	height: 10px auto;
+	display: block;
+	height: 40px;
+	border-radius: 50%;
+	background: aqua;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+	z-index: 10;
+	font-size: 13px;
+}
+#primary-page{
+	margin:40px 0px;
+}

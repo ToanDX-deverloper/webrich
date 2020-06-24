@@ -1,0 +1,18 @@
+#header{
+	justify-content: space-between;
+	letter-spacing: 1px;
+	float: left;
+	z-index: 9;
+	height: 80px;
+	padding: 0 20px;
+	background: #D31145;
+	background: -webkit-gradient(linear, left top, right top, from(#f68b1f), color-stop(32%, #e02125), color-stop(101%, #8b0027));
+	background: linear-gradient(to right, #f68b1f 0%, #e02125 32%, #8b0027 101%);
+	width:100%;
+	align-items: center;
+	
+}
+.header-cart svg{
+	width:50px;
+	height: 50px;
+}

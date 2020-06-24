@@ -1,0 +1,196 @@
+.view-products{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.view-products .view-product{
+	/*border:1px solid;*/
+	display: flex;
+	flex-direction: column;
+}
+.single-product .swiper-button-prev,.single-product .swiper-button-next {
+	display: block;
+}
+
+
+/*Custom gallery của ảnh */
+/*=============================================*/
+.single-product div.product .images .woocommerce-main-image, .flex-viewport {
+    width: calc(85% - 15px);
+    float: right;
+    border: 1px solid #ededed;
+}
+	
+/* Make Gallery smaller width and place it beside the image */
+.single-product div.product .images .thumbnails, ol.flex-control-nav.flex-control-thumbs {
+    width: 15%;
+    float: left;
+   
+}
+
+/* Style each Thumbnail with width and margins */
+.single-product div.product .images .thumbnails a.zoom, ol.flex-control-nav.flex-control-thumbs a.zoom {
+    width: 90%;
+    float: none;
+    margin: 0 0 10% 10%;
+}
+
+/* Move the zoom tool to the left side to accommodate the gallery thumbs (otherwise it covers the first thumbnail */
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+    right: .875em !important;
+}
+/*css cho ảnh bên trong khi active */
+.flex-viewport .flex-active-slide a{width: 85%;display: block;}
+
+.woocommerce div.product div.images .flex-control-thumbs {
+	display: flex;
+	flex-direction: column;
+	
+}
+.woocommerce div.product div.images .flex-control-thumbs  li{
+	width: 100%;
+	padding:0px 4px;
+	margin-bottom: 5px;
+	
+}
+/*Css cho sale của sản phẩm gần nhất*/
+.single-product-page .product>.onsale{ display: none; }
+
+.woocommerce div.product div.images .flex-control-thumbs  li img.flex-active{
+	border: 2px solid #86bc42;
+}
+.woocommerce div.product div.images .flex-control-thumbs  li img{
+	border: 1px solid #ededed;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li {
+	border:0px;
+	background: none;
+	margin-right: 15px;
+}
+.single-product div.product .woocommerce-tabs ul.tabs li:before
+,.single-product div.product .woocommerce-tabs ul.tabs li:after{
+	border: none;
+	border-bottom-left-radius: 0px;
+}
+.single-product div.product .woocommerce-tabs ul.tabs li:before{ box-shadow: none; }
+.single-product div.product .woocommerce-tabs ul.tabs {
+	padding:0px;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li a {
+	padding: 10px 5px;
+}
+.single-product div.product .woocommerce-tabs ul.tabs::before {	
+	border-bottom: 1px solid #ededed;
+	/*border: none;*/
+}
+.single-product div.product .woocommerce-tabs ul.tabs li:after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 0px;
+	background: #86bc42;	
+	height: 3px;
+	transition: width 0.3s linear;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li:hover:after{
+	width: 100%;
+	height: 4px;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li.active:after{
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	background: #86bc42;
+	height: 3px;
+	transition: all 0.3s linear;
+
+}
+.single-product div.product .woocommerce-tabs ul.tabs li a{
+	
+	font-size: 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: "Cuprum-Bold";
+}
+.single-product div.product .woocommerce-tabs ul.tabs li a:hover{
+	color: #86bc42;
+}
+.single-product div.product .woocommerce-tabs ul.tabs li.active a{ color: #86bc42; }
+
+
+.related .swiper-container .swiper-wrapper .swiper-slide li{
+	width: 100% !important;
+}
+.related .swiper-container .swiper-button-next,.related .swiper-container .swiper-button-prev,
+.view-products .swiper-button-next,.view-products .swiper-button-prev{
+	background-image: none !important;
+	width: 40px;
+	height: 40px;
+	background: #86bc42;
+	opacity: 0.5;
+	transition: all 0.3s linear;
+	top:calc( 50% - 30px);
+}
+.view-products .swiper-button-next,.view-products .swiper-button-prev{
+	top: 50%;
+}
+.related .swiper-container .swiper-button-next:hover,.related .swiper-container .swiper-button-prev:hover,
+.view-products .swiper-button-next:hover,.view-products .swiper-button-prev:hover{
+	opacity: 1;
+}
+.related .swiper-container .swiper-button-next,.view-products .swiper-button-next{
+	right: 0px !important;
+}
+.related .swiper-container .swiper-button-prev,.view-products .swiper-button-prev{
+	left: 0px !important;
+}
+.related .swiper-container .swiper-button-next svg,.related .swiper-container .swiper-button-prev svg,
+.view-products .swiper-button-next svg,.view-products .swiper-button-prev svg{
+	width: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:#fff;
+}
+.sp-lien-quan,.sp-daxem{
+	margin-bottom: 30px;
+	line-height: 50px;
+	font-size: 36px;
+	text-align: center;
+	font-family: "Pacifico-Regular";
+}
+
+.view-products .view-product {position: relative;}
+.view-products .view-product .view_sale_flash{ position: absolute; right: 10px; top:10px; width: 40px; height: 40px;
+	background: #86bc42; border-radius: 50%; color: #fff; text-align: center; line-height: 40px;
+}
+.viewr-product-wrapper{ width:100%; 
+	padding-bottom: 20px;
+}
+.viewr-product-wrapper h4{ margin-bottom: 10px; padding-top: 8px;  }
+.viewr-product-wrapper h4 a{ color: #333; }
+.view-products  .view-product:hover .viewr-product-wrapper{ background: #86bc42; }
+.view-products  .view-product:hover .price-product{ color:#fff;}
+.view-product .price-product{ color: #86bc42; margin-bottom: 10px; }
+.viewr-product-wrapper h4 a:hover{ color: #fff; }
+.viewr-product-wrapper .viewer-cart {
+	border: 1px solid #e3e3e3;
+	padding: 7px 10px;
+	border-radius: 50%;
+	background: #86bc42;
+	transition: 0.3s ease;
+}
+.view-products  .view-product{ transition: all 0.3s ease; border: 1px solid #ededed;}
+.view-products  .view-product:hover{
+	transform: translateY(-5px);
+	box-shadow: 3.5px 6px 25px 4px rgba(0, 0, 0, 0.2);
+}
+.viewr-product-wrapper .viewer-cart .fa-shopping-cart{ color: #e3e3e3; }

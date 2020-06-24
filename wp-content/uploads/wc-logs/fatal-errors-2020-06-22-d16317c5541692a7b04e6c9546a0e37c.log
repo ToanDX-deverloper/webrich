@@ -1,0 +1,8 @@
+2020-06-22T03:54:32+00:00 CRITICAL Uncaught Error: Call to undefined function gt_header() in C:\xampp\htdocs\rich\wp-content\themes\Food\page-video.php:1
+Stack trace:
+#0 C:\xampp\htdocs\rich\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\rich\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\rich\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\rich\wp-content\themes\Food\page-video.php on line 1
+

@@ -1,0 +1,491 @@
+/*Style cho form login trang*/
+/*============================================*/
+.woocommerce-account h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px;
+}
+.woocommerce-account .woocommerce-form.woocommerce-form-login.login ,.woocommerce-form-register{
+	/*border: 1px solid;*/
+	width: 350px;
+    /*border: 1px solid;*/
+    margin: 0px auto !important;
+    padding:0px !important;
+    border:none !important;
+
+}
+.woocommerce-account .woocommerce-form.woocommerce-form-login.login p.woocommerce-form-row label{
+	display: none;
+}
+#username,#password,#reg_email,#reg_password,#user_login{
+	width: 350px;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #ebebeb;
+	transition: border 0.5s;
+	color: #838c8c;
+}
+#username:focus,#password:focus,#reg_email:focus,#reg_password:focus{
+	border:1px solid #d2d2d2;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+}
+
+
+ /*Custom nút checkboxx*/
+
+
+.woocommerce-form__label-for-checkbox{
+	position: relative;
+}
+#rememberme {
+	/* display: none; */
+	opacity: 0;
+}
+.woocommerce-form__label-for-checkbox span.checkbox{
+	/*display: inline-block;*/
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 16px;
+	height: 16px;
+	/*background: pink;*/
+	border:1px solid #ebebeb;
+	content: "";
+
+}
+.woocommerce-form__label-for-checkbox input:checked ~ .checkbox {
+  	 background: #8ec354;
+}
+.woocommerce-form__label-for-checkbox span.checkbox::before {
+	left: 4px;
+	top: 0px;
+	width: 4px;
+	height: 8px;
+	border: solid #fff;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+}
+.woocommerce-form__label-for-checkbox:hover span.checkbox{
+	/*background: #ebebeb;*/
+	cursor: pointer;
+}
+.checkbox:before{
+  content: "";
+  position: absolute;
+  display: none;
+
+}
+.woocommerce-form__label-for-checkbox:hover{
+	cursor: pointer;
+}
+.woocommerce-form__label-for-checkbox input:checked ~ .checkbox:before {
+  display: block;
+
+}
+.woocommerce-form__label-for-checkbox span:first-of-type{
+	display: inline-block;
+	padding-left: 5px;
+}
+.woocommerce-LostPassword.lost_password{
+	text-align: center;
+	
+}
+.woocommerce-LostPassword.lost_password a{
+	transition: color .1s ease;
+}
+.woocommerce-LostPassword.lost_password a:hover {
+	color: #8ec345;
+}
+
+
+/*================================================*/
+/*Validate cho form login false*/
+/*.border-red{
+	border:1px solid #d02e2e;
+}*/
+/*.woocommerce-account .woocommerce-error{
+	display: none;
+}*/
+/*.thong-bao-loi{
+	border: 1px solid #d02e2e;
+	color: #d02e2e;
+	width: 350px;
+	height: 30px;
+	padding:6px 12px;
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+	background-color: #fff6f6;
+	font-size: 12px;
+}*/
+.woocommerce-error {
+	max-width: 350px;
+	margin: 10px auto !important;
+	border: 1px solid #d02e2e !important;
+    text-align: center !important;
+	color: #d02e2e !important;
+ 	display: block;
+}
+.woocommerce-error li strong{
+	
+}
+.woocommerce-error::before{
+	display: none !important;
+}
+
+
+/*==============================================================================*/
+/*Custom when login */
+.woocommerce-MyAccount-navigation ul{
+	list-style:none;
+}
+.woocommerce-MyAccount-navigation ul li{
+	border-bottom:1px solid #d2d2d2;
+	border-left:1px solid #d2d2d2;
+	border-right:1px solid #d2d2d2;
+	height:40px;
+	padding: 14px 0px !important;
+
+}
+.woocommerce-MyAccount-navigation ul li:first-child{
+	border-top: 1px solid #d2d2d2;
+}
+.woocommerce-MyAccount-navigation ul li a{
+	transition: color 0.2s ease;
+}
+.woocommerce-MyAccount-navigation ul li a:hover{
+	color: #8ec345;
+}
+.woocommerce-MyAccount-navigation ul li:before,.woocommerce-button--next:after,.woocommerce-button--previous:before{
+	content: '\f0da';
+	font-family: 'fontawesome';
+	color: #8ec345;
+	padding-right: 3px;
+	padding-left: 10px;
+}
+.woocommerce-button--previous:before{
+	content: '\f0d9';
+	padding-right: 10px;
+	padding-left: 3px;
+}
+.woocommerce-button--next:after,.woocommerce-button--previous:before  {
+	color: #fff;
+}
+.woocommerce-account .woocommerce-MyAccount-content{
+	font-size: 14px;
+	line-height: 1.6;
+	font-family: Roboto, sans-serif;
+	padding:30px 0px;
+	font-weight: normal;
+}
+.woocommerce-account .woocommerce-MyAccount-content p a{
+	color: #8ec345;
+}
+.woocommerce-account .woocommerce-MyAccount-content p a:hover{
+	opacity: 0.7;
+}
+.woocommerce-account .woocommerce-orders-table td{
+   
+   font-size: 14px !important;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	margin: 30px 0px !important;
+}
+.woocommerce-account .woocommerce table.shop_table {
+	
+	border: 1px solid #d2d2d2 !important;
+	border-collapse: collapse;
+	margin: 0px !important; 
+}
+.woocommerce-account .woocommerce table.shop_table  tr td{
+	border:1px solid #d2d2d2 !important;
+}
+.woocommerce-account .woocommerce table.shop_table thead tr td{
+	border:1px solid #d2d2d2 !important;
+}
+.woocommerce-account  #primary-page thead {
+	font-size: 14px;
+}
+.woocommerce-account .shop_table thead {
+	height: 40px;
+}
+.view,.woocommerce-button--next,.woocommerce-button--previous  {
+	width: 47px;
+	height: 32px;
+	background: #8ec345 !important;
+	color: #fff !important;
+	line-height: 33px !important;
+	font-weight: 400 !important;
+	text-align: center;
+	padding: 0px !important;
+	font-size: 13px !important;
+	transition: color .3s ease;
+}
+.view:hover,.woocommerce-button--next:hover,.woocommerce-button--previous:hover{
+	background: #57901f !important;
+}
+.woocommerce-button--next,.woocommerce-button--previous {
+	width: 70px;
+	margin-top: 10px !important;
+}
+.woocommerce-customer-details--phone:before,.woocommerce-customer-details--email:before {
+	font-family: 'fontawesome' !important;
+	color: #57901f !important;
+	font-weight: 700;
+	font-size: 16px !important;
+	line-height: 20px !important;
+}
+.woocommerce-customer-details--phone:before {
+	content: '\f098' !important;
+}
+.woocommerce-customer-details--email:before{
+	content: '\f0e0' !important;
+}
+
+
+
+/*Hover vào tài khoản */
+.header_account{
+	position: relative;
+}
+.header_account:hover ul.tai-khoan{	
+	display: block;
+	
+}
+ul.tai-khoan {
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 20px;
+	
+	width: 200px;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 20px 40px 0px rgba(168, 172, 185, 0.62);
+	z-index: 1000;
+	height: 100px;
+	transition: all ease 0.3s;
+	animation: moveaccount 0.3s linear;
+}
+ul.tai-khoan li{
+	margin-bottom: 10px;
+}
+ul.tai-khoan li a{
+	/*transition: all ease 0.3s;*/
+}
+ul.tai-khoan li a:hover{
+	color: #8ec345;
+}
+
+
+
+
+
+
+
+@keyframes moveaccount{
+	0%{ transform: translateY(10px); }
+	100%{ transform: translateY(0px); }
+}
+.swiper-container .swiper-slide img{
+	height: 100% !important;
+	/*filter: contrast(80%);*/
+}
+.swiper-container .swiper-slide img {
+	
+	width: 100% !important;
+}
+/*.swiper-button-prev::after, .swiper-container-rtl .swiper-button-next::after {
+	content: '' !important;
+	background: transparent url("https://hstatic.net/782/1000119782/1000166670/arrow-left.png") no-repeat;	
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin-left: 50px;
+	display: none;
+	border:none;
+	outline: none;
+}*/
+
+/*.swiper-button-next::after, .swiper-container-rtl .swiper-button-prev::after {
+	content: '' !important;
+	background: transparent url("https://hstatic.net/782/1000119782/1000166670/arrow-right.png") no-repeat;	
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin-right: 50px;
+	display: none;
+}*/
+/*.swiper-button-next:after{
+	
+}
+.swiper-container:hover .swiper-button-next:after{
+	animation: slide 0.2s linear;
+	display: block;
+	
+}
+.swiper-container:hover .swiper-button-prev:after{
+	animation: slide-two 0.2s linear;
+	display: block;
+
+}
+@keyframes slide{
+	0%{ transform: translateX(100px); }
+	100%{transform: translateX(0px);}
+}
+@keyframes slide-two{
+	0%{ transform: translateX(-100px); }
+	100%{transform: translateX(0px);}
+}*/
+
+
+/*==============================================*/
+/*Làm nút xoay*/
+.spin-test{
+	font-size: 30px !important;
+	position: absolute;
+	display: none !important;
+	top: 50%;
+	left: 50%;
+	transform: (-50%,-50%);
+	animation: ovs 1s linear;
+	
+}
+/*.overlay-spinner{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.1);
+	animation: ovs 1s linear;
+	display: none;
+	
+}*/
+.fa-spinner{
+	animation: fa-spin 1s  linear !important;
+}
+@keyframes ovs{
+	0%{opacity: 0;}
+	50%{opacity: 1;  color: #fff; background: rgba(0,0,0,0.2);}
+	100%{opacity: 0;}
+}
+
+
+
+ .woocommerce-checkout form.checkout_coupon {
+	/*border-top: 1px solid rgba(0,0,0,0.1) !important;*/
+	border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-top:none !important;
+	padding: 10px 0px!important;
+	margin: 0px !important;
+	text-align: left;
+	border-radius: 5px;
+}
+
+ .woocommerce-checkout .height-input{
+ height: 50px;
+ width: 100px;
+}
+ .woocommerce-checkout .checkout_coupon{
+ 	display: flex;
+ }
+ .woocommerce-checkout  .form-row-first{
+ 	flex: 3;
+ }
+.woocommerce-checkout  .form-row-last{
+ 	flex: 1;
+ 	display: flex;
+ 	align-items: center;
+ }
+ .woocommerce-checkout #coupon_code {
+	height: 50px;
+	padding: 10px;
+	font-size: inherit;
+	
+	box-shadow: 0 0 0 2px #e2e2e2;
+	transition: all 0.2s ease-out;
+	background-color: white;
+	color: rgba(0,0,0,0.5);
+	border-radius: 4px;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	/*padding: 0.94em 2.8em 0.94em 0.8em;*/
+	word-break: normal;
+	border: none;
+}
+ .woocommerce-checkout #coupon_code:focus {
+	box-shadow: 0 0 0 2px #338dbc;
+	outline: none;
+	border:none;
+}
+
+.woocommerce-form-login__submit,.login_submit_btn{
+	width: 350px;
+	height: 40px;
+	background: #8ec354 !important;
+	color: #fff !important;
+	margin-top: 10px !important;
+	text-transform: uppercase;
+	font-weight: normal;
+	border:none;
+}
+.register {
+	text-align: center;
+	margin-top: 10px;
+}
+.dang-ki,.back-to{
+	color: #8ec354;
+	transition: 0.5s linear;
+}
+.dang-ki:hover,.back-to:hover{
+	opacity: 0.7;
+}
+
+.re_login  {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+	display: block;
+}
+
+.re_login a:hover{
+	color: #8ec354;
+	
+}
+.text-lostpass,.lost-pass-input,.lost-pass-btn{
+	text-align: center;
+}
+.text-lostpass{
+	margin: 10px;
+	color: #838c8c;
+}
+
+.woocommerce div.product div.images img {
+	display: block;
+	width: 85% !important;
+	height: auto;
+	box-shadow: none;
+}
+
+.woocommerce-account .page-heading{ display: none;
+
+}
+
+@media only screen and (max-width:768px) {
+	.woocommerce-account .woocommerce-form.woocommerce-form-login.login, .woocommerce-form-register,
+	.woocommerce-form-login__submit, .login_submit_btn ,
+	#username, #password, #reg_email, #reg_password, #user_login 
+	 {
+		width: 100%;
+	}
+
+}

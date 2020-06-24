@@ -1,0 +1,37 @@
+.qty {
+    -webkit-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.wrap-quantity input {
+	width: 30px !important;
+	height: 30px;
+	border: none;
+	background: none;
+}
+.wrap-quantity .minus {
+	border-right: 1px solid #ededed;
+}
+.wrap-quantity .plus {
+	border-left: 1px solid #ededed;
+}
+.wrap-quantity {
+	border: 1px solid #ededed;
+	width:100px;
+}
+
+.trash-can a svg {
+	width: 15px;
+	color: #000;
+	transition: 0.3s linear;
+	cursor: pointer;
+}
+.cart .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+	width: 100px;
+	width: 100px !important;
+	padding: 10px;
+	/*border: 1px solid;*/
+}

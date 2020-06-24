@@ -1,0 +1,9 @@
+.single-product .onsale1{
+	display: none;
+}
+.woocommerce-product-details__short-description{
+	padding: 20px 0px;
+}
+.related ul li{
+	width:100% !important;
+}

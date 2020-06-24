@@ -1,0 +1,50 @@
+/*body {padding: 0;margin: 0;float: left;width: 100%;font-family: Helvetica,Arial,sans-serif;font-size: 14px;background-color: #FFFFFF;}*/
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	font-family:'Cuprum-Regular', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #333333;
+	height: auto;
+	line-height: 24px;
+	
+}
+body{/*overflow: scroll !important;*/}
+
+@font-face{
+	font-family: "Cuprum-Regular";
+	src:url("../font/Cuprum-Regular.woff") format('woff');
+
+}
+@font-face{
+	font-family: "Pacifico-Regular";
+	src:url("../font/Pacifico-Regular.woff") format('woff');
+
+}
+@font-face{
+	font-family: "Cuprum-Bold";
+	src:url("../font/Cuprum-Bold.woff") format('woff');
+
+}
+
+img {max-width: 100%;}
+img{vertical-align: middle;}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #86bc42;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
